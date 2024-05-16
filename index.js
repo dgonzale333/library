@@ -236,7 +236,7 @@ let libros = [
         paginas: 635,
         dimensiones: "15x4x22 cm",
         peso: "1.0 kg"
-    }
+    },
     {
         titulo: "El alquimista",
         autor: "Paulo Coelho",
@@ -325,5 +325,8 @@ let libros = [
         ubicacion: "Atlanta, Estados Unidos",
         fecha_publicacion: "2008-09-14",
         editorial: "Molino",
-        paginas: 416
+        paginas: 416,
     }
+]
+
+libros.push(tit)
