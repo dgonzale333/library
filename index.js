@@ -4,7 +4,7 @@ let libros = [
         autor: "Miguel de Cervantes",
         genero: "Ficción",
         idioma: "Español",
-        precio: 20.99,
+        precio: 80000,
         formato: "Tapa dura",
         isbn: "9781234567890",
         descripcion: "Una novela clásica de la literatura española.",
@@ -21,7 +21,7 @@ let libros = [
         autor: "George Orwell",
         genero: "Ciencia ficción",
         idioma: "Inglés",
-        precio: 15.99,
+        precio: 40000,
         formato: "Tapa blanda",
         isbn: "9789876543210",
         descripcion: "Una novela distópica sobre un futuro totalitario.",
@@ -38,7 +38,7 @@ let libros = [
         autor: "Gabriel García Márquez",
         genero: "Realismo mágico",
         idioma: "Español",
-        precio: 18.50,
+        precio: 47000,
         formato: "Tapa dura",
         isbn: "9788497592208",
         descripcion: "Una obra maestra de la literatura latinoamericana.",
@@ -55,7 +55,7 @@ let libros = [
         autor: "Harper Lee",
         genero: "Ficción",
         idioma: "Inglés",
-        precio: 12.99,
+        precio: 65000,
         formato: "Tapa blanda",
         isbn: "9780061120084",
         descripcion: "Una novela sobre la injusticia racial en el sur de Estados Unidos.",
@@ -72,7 +72,7 @@ let libros = [
         autor: "J.R.R. Tolkien",
         genero: "Fantasía",
         idioma: "Inglés",
-        precio: 35.00,
+        precio: 60000,
         formato: "Tapa dura",
         isbn: "9780261102385",
         descripcion: "Una épica saga de aventuras en la Tierra Media.",
@@ -89,7 +89,7 @@ let libros = [
         autor: "Miguel de Cervantes",
         genero: "Ficción",
         idioma: "Español",
-        precio: 20.99,
+        precio: 90000,
         formato: "Tapa dura",
         isbn: "9781234567891",
         descripcion: "Una novela clásica de la literatura española.",
@@ -106,7 +106,7 @@ let libros = [
         autor: "Jane Austen",
         genero: "Romance",
         idioma: "Inglés",
-        precio: 9.99,
+        precio: 35000,
         formato: "Tapa blanda",
         isbn: "9780199535569",
         descripcion: "Una novela sobre la vida y los amores de las hermanas Bennet.",
@@ -123,7 +123,7 @@ let libros = [
         autor: "Fyodor Dostoyevsky",
         genero: "Ficción",
         idioma: "Ruso",
-        precio: 14.99,
+        precio: 39000,
         formato: "Tapa blanda",
         isbn: "9780140449136",
         descripcion: "Una novela sobre la moralidad y la justicia.",
@@ -140,7 +140,7 @@ let libros = [
         autor: "Franz Kafka",
         genero: "Ficción",
         idioma: "Alemán",
-        precio: 7.99,
+        precio: 47000,
         formato: "Tapa blanda",
         isbn: "9780805208956",
         descripcion: "Una novela corta sobre un hombre que se convierte en un insecto gigante.",
@@ -157,7 +157,7 @@ let libros = [
         autor: "F. Scott Fitzgerald",
         genero: "Ficción",
         idioma: "Inglés",
-        precio: 10.99,
+        precio: 47000,
         formato: "Tapa blanda",
         isbn: "9780743273565",
         descripcion: "Una novela sobre el sueño americano en los años 20.",
@@ -174,7 +174,7 @@ let libros = [
         autor: "Oscar Wilde",
         genero: "Ficción",
         idioma: "Inglés",
-        precio: 11.99,
+        precio: 20000,
         formato: "Tapa blanda",
         isbn: "9780141439570",
         descripcion: "Una novela sobre un hombre que no envejece.",
@@ -191,7 +191,7 @@ let libros = [
         autor: "James Joyce",
         genero: "Ficción",
         idioma: "Inglés",
-        precio: 13.99,
+        precio: 170000,
         formato: "Tapa blanda",
         isbn: "9780199535675",
         descripcion: "Una novela modernista sobre un día en la vida de Leopold Bloom.",
@@ -208,7 +208,7 @@ let libros = [
         autor: "Marcel Proust",
         genero: "Ficción",
         idioma: "Francés",
-        precio: 25.99,
+        precio: 60000,
         formato: "Tapa dura",
         isbn: "9782070409376",
         descripcion: "Una novela en siete volúmenes sobre la memoria involuntaria.",
@@ -225,7 +225,7 @@ let libros = [
         autor: "Herman Melville",
         genero: "Aventura",
         idioma: "Inglés",
-        precio: 12.99,
+        precio: 59000,
         formato: "Tapa dura",
         isbn: "9781503280786",
         descripcion: "Una novela sobre la caza de una ballena blanca gigante.",
@@ -242,7 +242,7 @@ let libros = [
         autor: "Paulo Coelho",
         genero: "Ficción",
         idioma: "Español",
-        precio: 15.99,
+        precio: 49000,
         formato: "Tapa blanda",
         isbn: "9780061122415",
         descripcion: "Una novela sobre seguir tus sueños y encontrar tu destino.",
@@ -257,7 +257,7 @@ let libros = [
         autor: "J.K. Rowling",
         genero: "Fantasía",
         idioma: "Inglés",
-        precio: 19.99,
+        precio: 160000,
         formato: "Tapa dura",
         isbn: "9780590353427",
         descripcion: "El primer libro de la famosa serie de Harry Potter.",
@@ -272,7 +272,7 @@ let libros = [
         autor: "Dan Brown",
         genero: "Ficción",
         idioma: "Español",
-        precio: 12.50,
+        precio: 45000,
         formato: "Tapa blanda",
         isbn: "9780307474278",
         descripcion: "Una novela de intriga que mezcla historia y conspiración.",
@@ -287,7 +287,7 @@ let libros = [
         autor: "Carlos Ruiz Zafón",
         genero: "Ficción",
         idioma: "Español",
-        precio: 18.95,
+        precio: 50000,
         formato: "Tapa dura",
         isbn: "9788401337800",
         descripcion: "Una historia de misterio y amor en la Barcelona de posguerra.",
@@ -302,7 +302,7 @@ let libros = [
         autor: "J.R.R. Tolkien",
         genero: "Fantasía",
         idioma: "Inglés",
-        precio: 14.99,
+        precio: 79000,
         formato: "Tapa blanda",
         isbn: "9780345339683",
         descripcion: "La historia del hobbit Bilbo Bolsón y su aventura para recuperar el tesoro de Smaug.",
@@ -317,7 +317,7 @@ let libros = [
         autor: "Suzanne Collins",
         genero: "Ciencia ficción",
         idioma: "Inglés",
-        precio: 10.75,
+        precio: 35000,
         formato: "Tapa blanda",
         isbn: "9788427202122",
         descripcion: "Una saga distópica sobre una competencia mortal televisada.",
@@ -326,7 +326,89 @@ let libros = [
         fecha_publicacion: "2008-09-14",
         editorial: "Molino",
         paginas: 416,
-    }
+    },
+
+
 ]
 
-libros.push(tit)
+
+const nuevoLibro = {
+    titulo: "El Ciclo del Hombre lobo",
+    autor: "Stephen King",
+    genero: "Suspenso y Terror",
+    idioma: "Español",
+    precio: 39000,
+    formato: "Tapa blanda",
+    isbn: "9786287513631",
+    descripcion: "El primer grito fue el de un ferroviario aislado por la nieve, cuando sintió unos colmillos desgarrando su garganta.",
+    estado: "Nuevo",
+    ubicacion: "Londres",
+    fecha_publicacion: "1983-10-19",
+    editorial: "DELBOLSILLO",
+    paginas: 189,
+    dimensiones: "13 X 19 cm",
+    peso: "50 GRS"
+  };
+  
+  function mostrarMenu() {
+  console.log("Seleccione una opción:");
+  console.log("1. Mostrar pila de libros");
+  console.log("2. Añadir un libro a la pila");
+  console.log("3. Quitar el último libro de la pila");
+  console.log("4. Mostrar la longitud de la pila");
+  console.log("5. Salir");
+  }
+  
+  function mostrarLibros(libros) {
+  console.table( libros);
+  }
+  
+  function añadirLibro(libros, libro) {
+  libros.push(libro);
+  console.log(`Libro añadido: ${libro.titulo}`);
+  }
+  
+  function quitarLibro(libros) {
+  const libroQuitado = libros.pop();
+  if (libroQuitado) {
+    console.log(`Libro quitado: ${libroQuitado.titulo}`);
+  } else {
+    console.log("No hay libros para quitar.");
+  }
+  }
+  
+  function mostrarLongitud(libros) {
+  console.log(`Longitud del array: ${libros.length}`);
+  }
+  
+  var continuar = "si";
+  
+  do {
+  mostrarMenu();
+  var opcion = prompt("Seleccione una opción:");
+  switch (opcion) {
+    case '1':
+      mostrarLibros(libros);
+      break;
+    case '2':
+      
+      añadirLibro(libros, nuevoLibro);
+      break;
+    case '3':
+      quitarLibro(libros);
+      break;
+    case '4':
+      mostrarLongitud(libros);
+      break;
+    case '5':
+      continuar = "no";
+      console.log("Saliendo del programa...");
+      break;
+    default:
+      console.log("Opción no válida. Intente de nuevo.");
+      break;
+  }
+  if (continuar !== "no") {
+    continuar = prompt("Desea continuar (si/no)").toLowerCase();
+  }
+  } while (continuar === "si");
