@@ -332,7 +332,7 @@ let libros = [
 ]
 
 
-const nuevoLibro = {
+const libroNuevo = {
     titulo: "El Ciclo del Hombre lobo",
     autor: "Stephen King",
     genero: "Suspenso y Terror",
@@ -348,152 +348,251 @@ const nuevoLibro = {
     paginas: 189,
     dimensiones: "13 X 19 cm",
     peso: "50 GRS"
-};
+  };
 
 
-function mostrarMenu() {
-    console.log("Seleccione una opción:");
-    console.log("1. Mostrar pila de libros");
-    console.log("2. Añadir un libro a la pila");
-    console.log("3. Quitar el último libro de la pila");
-    console.log("4. Mostrar la longitud de la pila");
-    console.log("5. Mostrar lista");
-    console.log("6. Salir");
+
+function showMainMenu() {
+    //Mensaje Primer Menu
+    let message = "Elige un Menu:\n";
+    message += "1. Menu Libros\n";
+    message += "2. Menu iteraciones\n";
+    message += "3. Menu nuevo\n";
+    message += "4. Salir";
+  
+    // Mensaje y Opcion del Usuario
+    let choice = prompt(message);
+  
+    //Elección del usuario
+    switch (choice) {
+      case '1':
+        //SUBMENU1
+        showSubMenu();
+        break;
+      case '2':
+        //SUBMENU 2 'ITERACIONES'
+        showSubMenu2();
+        break;
+      case '3':
+        alert("Elegiste la Opción 3");
+        showMainMenu(); // Volver al menú principal
+        break;
+      case '4':
+        alert("Saliendo del menú...");
+        break;
+      default:
+        alert("Opción no válida");
+        showMainMenu(); // Volver al menú principal en caso de opción no válida
     }
-    
+  }
+  
+  function showSubMenu() {
+    // Definir el mensaje con las opciones del submenú
+  
+    let subMessage = "Elige una  opcion :\n";
+    subMessage += "1. Mostrar Pila de libros\n";
+    subMessage += "2. Añadir un libro a la pila\n";
+    subMessage += "3. Quitar El ultmo libro de la Pila\n";
+    subMessage += "4. Mostrar la longitud de la pila\n";
+    subMessage += "5. Regresar al menú principal";
+  
     function mostrarLibros(libros) {
-    console.table( libros);
+      console.table(libros);
     }
-    
+  
     function añadirLibro(libros, libro) {
-    libros.push(libro);
-    console.log(`Libro añadido: ${libro.titulo}`);
+      libros.push(libro);
+      console.log(`Libro añadido: ${libro.titulo}`);
     }
-    
+  
     function quitarLibro(libros) {
-    const libroQuitado = libros.pop();
-    if (libroQuitado) {
-      console.log(`Libro quitado: ${libroQuitado.titulo}`);
-    } else {
-      console.log("No hay libros para quitar.");
+      const libroQuitado = libros.pop();
+      if (libroQuitado) {
+        console.log(`Libro quitado: ${libroQuitado.titulo}`);
+      } else {
+        console.log("No hay libros para quitar.");
+      }
     }
-    }
-    
+  
     function mostrarLongitud(libros) {
-    console.log(`Longitud del array: ${libros.length}`);
+      console.log(`Longitud del array: ${libros.length}`);
     }
-
-
-const LibroList = libros.map((libro ) => {
-    return{
-        titulo:libro.titulo,
-        autor:libro.autor,
-        precio:libro.precio,
-    }
-})
-
-const iteraciones1 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
-    }
-})
-
-const iteraciones2 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
-    }
-})
-
-const iteraciones3 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
-    }
-})
-
-const iteraciones4 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
-    }
-})
-
-const iteraciones5 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
-    }
-})
-
-const iteraciones6 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
-    }
-})
-
-const iteraciones7 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
-    }
-})
-
-const iteraciones8 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
-    }
-})
-
-const iteraciones9 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
-    }
-})
-
-const iteraciones10 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
-    }
-})
-
   
-  var continuar = "si";
+    // Mostrar el mensaje y capturar la elección del usuario
+    let subChoice = prompt(subMessage);
   
-  do {
-  mostrarMenu();
-  var opcion = prompt("Seleccione una opción:");
-  switch (opcion) {
-    case '1':
-      mostrarLibros(libros);
-      break;
-    case '2':
-      
-      añadirLibro(libros, nuevoLibro);
-      break;
-    case '3':
-      quitarLibro(libros);
-      break;
-    case '4':
-      mostrarLongitud(libros);
-      break;
-    case '5':
-      continuar = "no";
-      console.log("Saliendo del programa...");
-      break;
-    default:
-      console.log("Opción no válida. Intente de nuevo.");
-      break;
+    // Evaluar la elección del usuario en el submenú
+  
+    switch (subChoice) {
+      case '1':
+        mostrarLibros(libros);
+        showSubMenu();
+        break;
+      case '2':
+        añadirLibro(libros , libroNuevo);
+          showSubMenu();
+        break;
+      case '3':
+        quitarLibro(libros);
+          showSubMenu();
+        break;
+      case '4':
+        mostrarLongitud(libros); 
+          showSubMenu();
+        break;
+      case '5':
+        showMainMenu(); // Volver al menú principal
+        break;
+      default:
+        alert("Opción no válida");
+        showSubMenu(); // Volver al submenú en caso de opción no válida
+    }
   }
-  if (continuar !== "no") {
-    continuar = prompt("Desea continuar (si/no)").toLowerCase();
+  
+  //SUBMENU2
+  
+  function showSubMenu2() {
+    // Definir el mensaje con las opciones del submenú
+    
+    let subMessage = "Elige una  opcion :\n";
+    subMessage += "1. Mostrar 1 iteracion\n";
+    subMessage += "2. Mostrar 10 iteraciones\n";
+    subMessage += "5. Regresar al menú principal";
+  
+  //MOSTRAR ITERACION
+  
+    const LibroMethod = libros.map((libros) => {
+      return{
+          titulo: libros.titulo,
+          autor: libros.autor,
+          editorial: libros.editorial,
+          precio: libros.precio
+      }
+    });
+  
+    //MOSTRAR 10 ITERACIONES
+  
+    const iteraciones = libros.map((libros) =>{
+      return{
+          titulo: libros.titulo,
+          autor: libros .autor,
+          paginas: libros.paginas
+  
+      }
+    });
+  
+    
+    const iteraciones2 = libros.map((libros) =>{
+      return{
+          titulo: libros.titulo,
+          dimensiones: libros.dimensiones,
+          precio: libros.precio
+  
+      }
+    });
+  
+    const iteraciones3 = libros.map((libros) =>{
+      return{
+          titulo: libros.titulo,
+          idioma: libros.idioma,
+          ubicacion: libros.ubicacion
+  
+      }
+    });
+  
+    const iteraciones4 = libros.map((libros) =>{
+      return{
+          titulo: libros.titulo,
+          isbn: libros.isbn,
+          precio: libros.precio
+  
+      }
+    });
+  
+    const iteraciones5 = libros.map((libros) =>{
+      return{
+          titulo: libros.titulo,
+          autor: libros.autor,
+          genero: libros.genero
+  
+      }
+    });
+  
+    const iteraciones6 = libros.map((libros) =>{
+      return{
+          titulo: libros.titulo,
+          descripcion: libros.descripcion,
+          genero: libros.genero
+  
+      }
+    });
+  
+    const iteraciones7 = libros.map((libros) =>{
+      return{
+          titulo: libros.titulo,
+          fecha_publicacion: libros.fecha_publicacion,
+          paginas: libros.paginas
+  
+      }
+    });
+  
+    const iteraciones8 = libros.map((libros) =>{
+      return{
+          titulo: libros.titulo,
+          estado: libros.estado,
+          ubicacion: libros.ubicacion
+  
+      }
+    });
+  
+    const iteraciones9 = libros.map((libros) =>{
+      return{
+          titulo: libros.titulo,
+          genero: libros.genero,
+          formato: libros.formato
+  
+      }
+    });
+  
+    const iteraciones10 = libros.map((libros) =>{
+      return{
+          titulo: libros.titulo,
+          idioma: libros.idioma,
+          editorial: libros.editorial
+  
+      }
+    });
+  
+  
+    // Mostrar el mensaje y capturar la elección del usuario
+    let subChoice = prompt(subMessage);
+  
+    // Evaluar la elección del usuario en el submenú
+  
+    switch (subChoice) {
+      case '1':
+        console.table(LibroMethod);
+        showSubMenu2();
+        break;
+      case '2':
+        console.table(iteraciones);
+        console.table(iteraciones2);
+        console.table(iteraciones3);
+        console.table(iteraciones4);
+        console.table(iteraciones5);
+        console.table(iteraciones6);
+        console.table(iteraciones7);
+        console.table(iteraciones8);
+        console.table(iteraciones9);
+        console.table(iteraciones10);
+          showSubMenu2();
+      case '3':
+        showMainMenu(); // Volver al menú principal
+        break;
+      default:
+        alert("Opción no válida");
+        showSubMenu(); // Volver al submenú en caso de opción no válida
+    }
   }
-  } while (continuar === "si");
-
-
-
+  // Inicialmente mostrar el menú principal
+  showMainMenu();
