@@ -4,7 +4,7 @@ let libros = [
         autor: "Miguel de Cervantes",
         genero: "Ficción",
         idioma: "Español",
-        precio: 80000,
+        precio: 80,
         descuento : 20,
         formato: "Tapa dura",
         isbn: "9781234567890",
@@ -22,7 +22,7 @@ let libros = [
         autor: "George Orwell",
         genero: "Ciencia ficción",
         idioma: "Inglés",
-        precio: 40000,
+        precio: 40,
         descuento : 20,
         formato: "Tapa blanda",
         isbn: "9789876543210",
@@ -40,7 +40,7 @@ let libros = [
         autor: "Gabriel García Márquez",
         genero: "Realismo mágico",
         idioma: "Español",
-        precio: 47000,
+        precio: 47,
         descuento : 20,
         formato: "Tapa dura",
         isbn: "9788497592208",
@@ -58,7 +58,7 @@ let libros = [
         autor: "Harper Lee",
         genero: "Ficción",
         idioma: "Inglés",
-        precio: 65000,
+        precio: 65,
         formato: "Tapa blanda",
         isbn: "9780061120084",
         descripcion: "Una novela sobre la injusticia racial en el sur de Estados Unidos.",
@@ -75,7 +75,7 @@ let libros = [
         autor: "J.R.R. Tolkien",
         genero: "Fantasía",
         idioma: "Inglés",
-        precio: 60000,
+        precio: 60,
         descuento : 20,
         formato: "Tapa dura",
         isbn: "9780261102385",
@@ -93,7 +93,7 @@ let libros = [
         autor: "Miguel de Cervantes",
         genero: "Ficción",
         idioma: "Español",
-        precio: 90000,
+        precio: 90,
         formato: "Tapa dura",
         isbn: "9781234567891",
         descripcion: "Una novela clásica de la literatura española.",
@@ -110,7 +110,7 @@ let libros = [
         autor: "Jane Austen",
         genero: "Romance",
         idioma: "Inglés",
-        precio: 35000,
+        precio: 35,
         descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780199535569",
@@ -128,7 +128,7 @@ let libros = [
         autor: "Fyodor Dostoyevsky",
         genero: "Ficción",
         idioma: "Ruso",
-        precio: 39000,
+        precio: 39,
         descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780140449136",
@@ -146,7 +146,7 @@ let libros = [
         autor: "Franz Kafka",
         genero: "Ficción",
         idioma: "Alemán",
-        precio: 47000,
+        precio: 47,
         descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780805208956",
@@ -164,7 +164,7 @@ let libros = [
         autor: "F. Scott Fitzgerald",
         genero: "Ficción",
         idioma: "Inglés",
-        precio: 47000,
+        precio: 47,
         descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780743273565",
@@ -182,7 +182,7 @@ let libros = [
         autor: "Oscar Wilde",
         genero: "Ficción",
         idioma: "Inglés",
-        precio: 20000,
+        precio: 20,
         descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780141439570",
@@ -200,7 +200,7 @@ let libros = [
         autor: "James Joyce",
         genero: "Ficción",
         idioma: "Inglés",
-        precio: 170000,
+        precio: 17,
         descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780199535675",
@@ -218,7 +218,7 @@ let libros = [
         autor: "Marcel Proust",
         genero: "Ficción",
         idioma: "Francés",
-        precio: 60000,
+        precio: 60,
         descuento : 20,
         formato: "Tapa dura",
         isbn: "9782070409376",
@@ -236,7 +236,7 @@ let libros = [
         autor: "Herman Melville",
         genero: "Aventura",
         idioma: "Inglés",
-        precio: 59000,
+        precio: 59,
         descuento : 20,
         formato: "Tapa dura",
         isbn: "9781503280786",
@@ -254,7 +254,7 @@ let libros = [
         autor: "Paulo Coelho",
         genero: "Ficción",
         idioma: "Español",
-        precio: 49000,
+        precio: 49,
         descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780061122415",
@@ -270,7 +270,7 @@ let libros = [
         autor: "J.K. Rowling",
         genero: "Fantasía",
         idioma: "Inglés",
-        precio: 160000,
+        precio: 16,
         formato: "Tapa dura",
         isbn: "9780590353427",
         descripcion: "El primer libro de la famosa serie de Harry Potter.",
@@ -285,7 +285,7 @@ let libros = [
         autor: "Dan Brown",
         genero: "Ficción",
         idioma: "Español",
-        precio: 45000,
+        precio: 45,
         descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780307474278",
@@ -301,7 +301,7 @@ let libros = [
         autor: "Carlos Ruiz Zafón",
         genero: "Ficción",
         idioma: "Español",
-        precio: 50000,
+        precio: 50,
         descuento : 20,
         formato: "Tapa dura",
         isbn: "9788401337800",
@@ -317,7 +317,7 @@ let libros = [
         autor: "J.R.R. Tolkien",
         genero: "Fantasía",
         idioma: "Inglés",
-        precio: 79000,
+        precio: 79,
         descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780345339683",
@@ -333,7 +333,7 @@ let libros = [
         autor: "Suzanne Collins",
         genero: "Ciencia ficción",
         idioma: "Inglés",
-        precio: 35000,
+        precio: 35,
         descuento : 20,
         formato: "Tapa blanda",
         isbn: "9788427202122",
@@ -354,7 +354,7 @@ const libroNuevo = {
     autor: "Stephen King",
     genero: "Suspenso y Terror",
     idioma: "Español",
-    precio: 39000,
+    precio: 39,
     descuento : 20,
     formato: "Tapa blanda",
     isbn: "9786287513631",
@@ -375,7 +375,8 @@ const libroNuevo = {
     message += "1. Menu Libros\n";
     message += "2. Menu iteraciones\n";
     message += "3. Listar libros con descuento\n";
-    message += "4. Salir";
+    message += "4. Menu libros precio\n";
+    message += "5. Salir";
   
     
     let choice = prompt(message);
@@ -383,18 +384,19 @@ const libroNuevo = {
     
     switch (choice) {
       case '1':
-        
         showSubMenu();
         break;
       case '2':
-    
         showSubMenu2();
         break;
       case '3':
         listarLibrosConDescuento();
         showMainMenu(); 
         break;
-      case '4':
+        case '4':
+          showSubMenu3(); 
+          break;
+      case '5':
         alert("Saliendo del menú...");
         break;
       default:
@@ -403,21 +405,7 @@ const libroNuevo = {
     }
 }
 
-function listarLibrosConDescuento() {
-    const librosConDescuento = libros.map(libro => {
-        const precioConDescuento = libro.precio - (libro.precio * libro.descuento / 100);
-        return {
-            titulo: libro.titulo,
-            autor: libro.autor,
-            editorial: libro.editorial,
-            precio: libro.precio,
-            descuento: libro.descuento,
-            precioConDescuento: precioConDescuento
-        };
-    });
 
-    console.table(librosConDescuento);
-}
 
 function showSubMenu() {
     let subMessage = "Elige una opción:\n";
@@ -608,4 +596,65 @@ function showSubMenu2() {
     }
 }
 
+function listarLibrosConDescuento() {
+  const librosConDescuento = libros.map(libro => {
+      const precioConDescuento = libro.precio - (libro.precio * libro.descuento / 100);
+      return {
+          titulo: libro.titulo,
+          autor: libro.autor,
+          editorial: libro.editorial,
+          precio: libro.precio,
+          descuento: libro.descuento,
+          precioConDescuento: precioConDescuento
+      };
+  });
+
+  console.table(librosConDescuento);
+}
+
+function showSubMenu3() {
+  let subMessage = "Elige una opción:\n";
+  subMessage += "1. Mostrar libros precio mayor a 50\n";
+  subMessage += "2. Resumen de libros\n";
+  subMessage += "3. Regresar al menú principal";
+
+  function librosMayoresACincuenta() {
+      return libros.filter(libro => libro.precio > 50);
+  }
+
+  function resumenLibrosPorPaginas() {
+    return libros
+        .filter(libro => libro.paginas > 0)  
+        .sort((a, b) => b.paginas - a.paginas) 
+        .map(libro => {
+            return {
+                titulo: libro.titulo,
+                autor: libro.autor,
+                editorial: libro.editorial,
+                paginas: libro.paginas
+            };
+        });
+    }
+
+  let subChoice = prompt(subMessage);
+
+  switch (subChoice) {
+      case '1':
+          console.table(librosMayoresACincuenta());
+          showSubMenu3();
+          break;
+      case '2':
+          console.table(resumenLibrosPorPaginas());
+          showSubMenu3();
+          break;
+      case '3':
+          showMainMenu(); 
+          break;
+      default:
+          alert("Opción no válida");
+          showSubMenu3(); 
+  }
+}
+
 showMainMenu();
+
