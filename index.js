@@ -4,7 +4,8 @@ let libros = [
         autor: "Miguel de Cervantes",
         genero: "Ficción",
         idioma: "Español",
-        precio: 80000,
+        precio: 80,
+        descuento: 20,
         formato: "Tapa dura",
         isbn: "9781234567890",
         descripcion: "Una novela clásica de la literatura española.",
@@ -12,7 +13,7 @@ let libros = [
         ubicacion: "Madrid, España",
         fecha_publicacion: "1605-01-16",
         editorial: "Editorial 1",
-        paginas: 1200,
+        paginas: 70,
         dimensiones: "15x5x20 cm",
         peso: "1.2 kg"
     },
@@ -21,7 +22,8 @@ let libros = [
         autor: "George Orwell",
         genero: "Ciencia ficción",
         idioma: "Inglés",
-        precio: 40000,
+        precio: 40,
+        descuento: 20,
         formato: "Tapa blanda",
         isbn: "9789876543210",
         descripcion: "Una novela distópica sobre un futuro totalitario.",
@@ -38,7 +40,8 @@ let libros = [
         autor: "Gabriel García Márquez",
         genero: "Realismo mágico",
         idioma: "Español",
-        precio: 47000,
+        precio: 47,
+        descuento: 20,
         formato: "Tapa dura",
         isbn: "9788497592208",
         descripcion: "Una obra maestra de la literatura latinoamericana.",
@@ -55,7 +58,7 @@ let libros = [
         autor: "Harper Lee",
         genero: "Ficción",
         idioma: "Inglés",
-        precio: 65000,
+        precio: 65,
         formato: "Tapa blanda",
         isbn: "9780061120084",
         descripcion: "Una novela sobre la injusticia racial en el sur de Estados Unidos.",
@@ -72,7 +75,8 @@ let libros = [
         autor: "J.R.R. Tolkien",
         genero: "Fantasía",
         idioma: "Inglés",
-        precio: 60000,
+        precio: 60,
+        descuento: 20,
         formato: "Tapa dura",
         isbn: "9780261102385",
         descripcion: "Una épica saga de aventuras en la Tierra Media.",
@@ -89,7 +93,7 @@ let libros = [
         autor: "Miguel de Cervantes",
         genero: "Ficción",
         idioma: "Español",
-        precio: 90000,
+        precio: 90,
         formato: "Tapa dura",
         isbn: "9781234567891",
         descripcion: "Una novela clásica de la literatura española.",
@@ -106,7 +110,8 @@ let libros = [
         autor: "Jane Austen",
         genero: "Romance",
         idioma: "Inglés",
-        precio: 35000,
+        precio: 35,
+        descuento: 20,
         formato: "Tapa blanda",
         isbn: "9780199535569",
         descripcion: "Una novela sobre la vida y los amores de las hermanas Bennet.",
@@ -123,7 +128,8 @@ let libros = [
         autor: "Fyodor Dostoyevsky",
         genero: "Ficción",
         idioma: "Ruso",
-        precio: 39000,
+        precio: 39,
+        descuento: 20,
         formato: "Tapa blanda",
         isbn: "9780140449136",
         descripcion: "Una novela sobre la moralidad y la justicia.",
@@ -140,7 +146,8 @@ let libros = [
         autor: "Franz Kafka",
         genero: "Ficción",
         idioma: "Alemán",
-        precio: 47000,
+        precio: 47,
+        descuento: 20,
         formato: "Tapa blanda",
         isbn: "9780805208956",
         descripcion: "Una novela corta sobre un hombre que se convierte en un insecto gigante.",
@@ -157,7 +164,8 @@ let libros = [
         autor: "F. Scott Fitzgerald",
         genero: "Ficción",
         idioma: "Inglés",
-        precio: 47000,
+        precio: 47,
+        descuento: 20,
         formato: "Tapa blanda",
         isbn: "9780743273565",
         descripcion: "Una novela sobre el sueño americano en los años 20.",
@@ -174,7 +182,8 @@ let libros = [
         autor: "Oscar Wilde",
         genero: "Ficción",
         idioma: "Inglés",
-        precio: 20000,
+        precio: 20,
+        descuento: 20,
         formato: "Tapa blanda",
         isbn: "9780141439570",
         descripcion: "Una novela sobre un hombre que no envejece.",
@@ -191,7 +200,8 @@ let libros = [
         autor: "James Joyce",
         genero: "Ficción",
         idioma: "Inglés",
-        precio: 170000,
+        precio: 17,
+        descuento: 20,
         formato: "Tapa blanda",
         isbn: "9780199535675",
         descripcion: "Una novela modernista sobre un día en la vida de Leopold Bloom.",
@@ -208,7 +218,8 @@ let libros = [
         autor: "Marcel Proust",
         genero: "Ficción",
         idioma: "Francés",
-        precio: 60000,
+        precio: 60,
+        descuento: 20,
         formato: "Tapa dura",
         isbn: "9782070409376",
         descripcion: "Una novela en siete volúmenes sobre la memoria involuntaria.",
@@ -216,7 +227,7 @@ let libros = [
         ubicacion: "París, Francia",
         fecha_publicacion: "1913-11-14",
         editorial: "Editorial 3",
-        paginas: 4215,
+        paginas: 421,
         dimensiones: "17x10x24 cm",
         peso: "3.0 kg"
     },
@@ -225,7 +236,8 @@ let libros = [
         autor: "Herman Melville",
         genero: "Aventura",
         idioma: "Inglés",
-        precio: 59000,
+        precio: 59,
+        descuento: 20,
         formato: "Tapa dura",
         isbn: "9781503280786",
         descripcion: "Una novela sobre la caza de una ballena blanca gigante.",
@@ -242,7 +254,8 @@ let libros = [
         autor: "Paulo Coelho",
         genero: "Ficción",
         idioma: "Español",
-        precio: 49000,
+        precio: 49,
+        descuento: 20,
         formato: "Tapa blanda",
         isbn: "9780061122415",
         descripcion: "Una novela sobre seguir tus sueños y encontrar tu destino.",
@@ -257,7 +270,7 @@ let libros = [
         autor: "J.K. Rowling",
         genero: "Fantasía",
         idioma: "Inglés",
-        precio: 160000,
+        precio: 16,
         formato: "Tapa dura",
         isbn: "9780590353427",
         descripcion: "El primer libro de la famosa serie de Harry Potter.",
@@ -272,7 +285,8 @@ let libros = [
         autor: "Dan Brown",
         genero: "Ficción",
         idioma: "Español",
-        precio: 45000,
+        precio: 45,
+        descuento: 20,
         formato: "Tapa blanda",
         isbn: "9780307474278",
         descripcion: "Una novela de intriga que mezcla historia y conspiración.",
@@ -287,7 +301,8 @@ let libros = [
         autor: "Carlos Ruiz Zafón",
         genero: "Ficción",
         idioma: "Español",
-        precio: 50000,
+        precio: 50,
+        descuento: 20,
         formato: "Tapa dura",
         isbn: "9788401337800",
         descripcion: "Una historia de misterio y amor en la Barcelona de posguerra.",
@@ -302,7 +317,8 @@ let libros = [
         autor: "J.R.R. Tolkien",
         genero: "Fantasía",
         idioma: "Inglés",
-        precio: 79000,
+        precio: 79,
+        descuento: 20,
         formato: "Tapa blanda",
         isbn: "9780345339683",
         descripcion: "La historia del hobbit Bilbo Bolsón y su aventura para recuperar el tesoro de Smaug.",
@@ -317,7 +333,8 @@ let libros = [
         autor: "Suzanne Collins",
         genero: "Ciencia ficción",
         idioma: "Inglés",
-        precio: 35000,
+        precio: 35,
+        descuento: 20,
         formato: "Tapa blanda",
         isbn: "9788427202122",
         descripcion: "Una saga distópica sobre una competencia mortal televisada.",
@@ -332,12 +349,13 @@ let libros = [
 ]
 
 
-const nuevoLibro = {
+const libroNuevo = {
     titulo: "El Ciclo del Hombre lobo",
     autor: "Stephen King",
     genero: "Suspenso y Terror",
     idioma: "Español",
-    precio: 39000,
+    precio: 39,
+    descuento: 20,
     formato: "Tapa blanda",
     isbn: "9786287513631",
     descripcion: "El primer grito fue el de un ferroviario aislado por la nieve, cuando sintió unos colmillos desgarrando su garganta.",
@@ -351,149 +369,360 @@ const nuevoLibro = {
 };
 
 
-function mostrarMenu() {
-    console.log("Seleccione una opción:");
-    console.log("1. Mostrar pila de libros");
-    console.log("2. Añadir un libro a la pila");
-    console.log("3. Quitar el último libro de la pila");
-    console.log("4. Mostrar la longitud de la pila");
-    console.log("5. Mostrar lista");
-    console.log("6. Salir");
+function showMainMenu() {
+    //Mensaje Primer Menu
+    let message = "Elige un Menu:\n";
+    message += "1. Menu Libros\n";
+    message += "2. Menu iteraciones\n";
+    message += "3. Listar libros con descuento\n";
+    message += "4. Menu libros precio\n";
+    message += "5. Menu detalles libros\n";
+    message += "6. Salir";
+
+
+    let choice = prompt(message);
+
+
+    switch (choice) {
+        case '1':
+            showSubMenu();
+            break;
+        case '2':
+            showSubMenu2();
+            break;
+        case '3':
+            listarLibrosConDescuento();
+            showMainMenu();
+            break;
+        case '4':
+            showSubMenu3();
+            break;
+        case '5':
+            showSubMenu4();
+            break;
+        case '6':
+            alert("Saliendo del menú...");
+            break;
+        default:
+            alert("Opción no válida");
+            showMainMenu();
     }
-    
+}
+
+
+
+function showSubMenu() {
+    let subMessage = "Elige una opción:\n";
+    subMessage += "1. Mostrar Pila de libros\n";
+    subMessage += "2. Añadir un libro a la pila\n";
+    subMessage += "3. Quitar El último libro de la Pila\n";
+    subMessage += "4. Mostrar la longitud de la pila\n";
+    subMessage += "5. Regresar al menú principal";
+
     function mostrarLibros(libros) {
-    console.table( libros);
+        console.table(libros);
     }
-    
+
     function añadirLibro(libros, libro) {
-    libros.push(libro);
-    console.log(`Libro añadido: ${libro.titulo}`);
+        libros.push(libro);
+        console.log(`Libro añadido: ${libro.titulo}`);
     }
-    
+
     function quitarLibro(libros) {
-    const libroQuitado = libros.pop();
-    if (libroQuitado) {
-      console.log(`Libro quitado: ${libroQuitado.titulo}`);
-    } else {
-      console.log("No hay libros para quitar.");
+        const libroQuitado = libros.pop();
+        if (libroQuitado) {
+            console.log(`Libro quitado: ${libroQuitado.titulo}`);
+        } else {
+            console.log("No hay libros para quitar.");
+        }
     }
-    }
-    
+
     function mostrarLongitud(libros) {
-    console.log(`Longitud del array: ${libros.length}`);
+        console.log(`Longitud del array: ${libros.length}`);
     }
 
 
-const LibroList = libros.map((libro ) => {
-    return{
-        titulo:libro.titulo,
-        autor:libro.autor,
-        precio:libro.precio,
+    let subChoice = prompt(subMessage);
+
+
+    switch (subChoice) {
+        case '1':
+            mostrarLibros(libros);
+            showSubMenu();
+            break;
+        case '2':
+            añadirLibro(libros, libroNuevo);
+            showSubMenu();
+            break;
+        case '3':
+            quitarLibro(libros);
+            showSubMenu();
+            break;
+        case '4':
+            mostrarLongitud(libros);
+            showSubMenu();
+            break;
+        case '5':
+            showMainMenu();
+            break;
+        default:
+            alert("Opción no válida");
+            showSubMenu();
     }
-})
+}
 
-const iteraciones1 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
+function showSubMenu2() {
+
+    let subMessage = "Elige una opción:\n";
+    subMessage += "1. Mostrar 1 iteración\n";
+    subMessage += "2. Mostrar 10 iteraciones\n";
+    subMessage += "3. Regresar al menú principal";
+
+
+    const LibroMethod = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            autor: libros.autor,
+            editorial: libros.editorial,
+            precio: libros.precio
+        }
+    });
+
+
+    const iteraciones = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            autor: libros.autor,
+            paginas: libros.paginas
+        }
+    });
+
+    const iteraciones2 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            dimensiones: libros.dimensiones,
+            precio: libros.precio
+        }
+    });
+
+    const iteraciones3 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            idioma: libros.idioma,
+            ubicacion: libros.ubicacion
+        }
+    });
+
+    const iteraciones4 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            isbn: libros.isbn,
+            precio: libros.precio
+        }
+    });
+
+    const iteraciones5 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            autor: libros.autor,
+            genero: libros.genero
+        }
+    });
+
+    const iteraciones6 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            descripcion: libros.descripcion,
+            genero: libros.genero
+        }
+    });
+
+    const iteraciones7 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            fecha_publicacion: libros.fecha_publicacion,
+            paginas: libros.paginas
+        }
+    });
+
+    const iteraciones8 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            estado: libros.estado,
+            ubicacion: libros.ubicacion
+        }
+    });
+
+    const iteraciones9 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            genero: libros.genero,
+            formato: libros.formato
+        }
+    });
+
+    const iteraciones10 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            idioma: libros.idioma,
+            editorial: libros.editorial
+        }
+    });
+
+
+    let subChoice = prompt(subMessage);
+
+
+    switch (subChoice) {
+        case '1':
+            console.table(LibroMethod);
+            showSubMenu2();
+            break;
+        case '2':
+            console.table(iteraciones);
+            console.table(iteraciones2);
+            console.table(iteraciones3);
+            console.table(iteraciones4);
+            console.table(iteraciones5);
+            console.table(iteraciones6);
+            console.table(iteraciones7);
+            console.table(iteraciones8);
+            console.table(iteraciones9);
+            console.table(iteraciones10);
+            showSubMenu2();
+            break;
+        case '3':
+            showMainMenu();
+            break;
+        default:
+            alert("Opción no válida");
+            showSubMenu2();
     }
-})
+}
 
-const iteraciones2 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
+function listarLibrosConDescuento() {
+    const librosConDescuento = libros.map(libro => {
+        const precioConDescuento = libro.precio - (libro.precio * libro.descuento / 100);
+        return {
+            titulo: libro.titulo,
+            autor: libro.autor,
+            editorial: libro.editorial,
+            precio: libro.precio,
+            descuento: libro.descuento,
+            precioConDescuento: precioConDescuento
+        };
+    });
+
+    console.table(librosConDescuento);
+}
+
+function showSubMenu3() {
+    let subMessage = "Elige una opción:\n";
+    subMessage += "1. Mostrar libros precio mayor a 50\n";
+    subMessage += "2. Resumen de libros\n";
+    subMessage += "3. Regresar al menú principal";
+
+    function librosMayoresACincuenta() {
+        return libros.filter(libro => libro.precio > 50);
     }
-})
 
-const iteraciones3 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
+    function resumenLibrosPorPaginas() {
+        return libros
+            .filter(libro => libro.paginas > 0)
+            .sort((a, b) => b.paginas - a.paginas)
+            .map(libro => {
+                return {
+                    titulo: libro.titulo,
+                    autor: libro.autor,
+                    editorial: libro.editorial,
+                    paginas: libro.paginas
+                };
+            });
     }
-})
 
-const iteraciones4 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
+    let subChoice = prompt(subMessage);
+
+    switch (subChoice) {
+        case '1':
+            console.table(librosMayoresACincuenta());
+            showSubMenu3();
+            break;
+        case '2':
+            console.table(resumenLibrosPorPaginas());
+            showSubMenu3();
+            break;
+        case '3':
+            showMainMenu();
+            break;
+        default:
+            alert("Opción no válida");
+            showSubMenu3();
     }
-})
+}
 
-const iteraciones5 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
+function showSubMenu4() {
+    let subMessage = "Elige una opción:\n";
+    subMessage += "1. Mostrar libros precio mayor a 11 dolares\n";
+    subMessage += "2. Mostrar libros menos de 100 paginas\n";
+    subMessage += "3. Mostrar libros precio mayor a 20 dolares\n";
+    subMessage += "4. Mostrar libros mayor numero de paginas\n";
+    subMessage += "5. Regresar al menú \n";
+
+
+    function librosCaros() {
+        return libros.filter(libro => libro.precio > 11)
+            .map(libro => ({ titulo: libro.titulo, autor: libro.autor, precio: libro.precio }));
     }
-})
 
-const iteraciones6 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
+    function librosMenosDe100Paginas() {
+        return libros.filter(libro => libro.paginas < 100)
+            .map(libro => ({ titulo: libro.titulo, autor: libro.autor, editorial: libro.editorial, paginas: libro.paginas }));
     }
-})
 
-const iteraciones7 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
+    function librosCarosOrdenados() {
+        return libros.filter(libro => libro.precio > 20)
+            .sort((a, b) => b.precio - a.precio)
+            .map(libro => ({ titulo: libro.titulo, autor: libro.autor, precio: libro.precio }));
     }
-})
 
-const iteraciones8 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
+    function librosMayorMenorPaginas() {
+        return libros.filter(libro => libro.paginas > 0)
+            .sort((a, b) => b.paginas - a.paginas)
+            .map(libro => ({ titulo: libro.titulo, autor: libro.autor, editorial: libro.editorial, paginas: libro.paginas }));
     }
-})
 
-const iteraciones9 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
+
+
+
+    let subChoice = prompt(subMessage);
+
+    switch (subChoice) {
+        case '1':
+            console.table(librosCaros());
+            showSubMenu4();
+            break;
+        case '2':
+            console.table(librosMenosDe100Paginas());
+            showSubMenu4();
+            break;
+        case '3':
+            console.table(librosCarosOrdenados());
+            showSubMenu4();
+            break;
+        case '4':
+            console.table(librosMayorMenorPaginas());
+            showSubMenu4();
+            break;
+        case '5':
+            showMainMenu();
+            break;
+        default:
+            alert("Opción no válida");
+            showSubMenu4();
     }
-})
-
-const iteraciones10 = libros.map((libro ) => {
-    return{
-        titulo: libro.titulo,
-        genero: libro.genero
-    }
-})
-
-  
-  var continuar = "si";
-  
-  do {
-  mostrarMenu();
-  var opcion = prompt("Seleccione una opción:");
-  switch (opcion) {
-    case '1':
-      mostrarLibros(libros);
-      break;
-    case '2':
-      
-      añadirLibro(libros, nuevoLibro);
-      break;
-    case '3':
-      quitarLibro(libros);
-      break;
-    case '4':
-      mostrarLongitud(libros);
-      break;
-    case '5':
-      continuar = "no";
-      console.log("Saliendo del programa...");
-      break;
-    default:
-      console.log("Opción no válida. Intente de nuevo.");
-      break;
-  }
-  if (continuar !== "no") {
-    continuar = prompt("Desea continuar (si/no)").toLowerCase();
-  }
-  } while (continuar === "si");
 
 
+
+}
+showMainMenu();
 
