@@ -5,6 +5,7 @@ let libros = [
         genero: "Ficción",
         idioma: "Español",
         precio: 80000,
+        descuento : 20,
         formato: "Tapa dura",
         isbn: "9781234567890",
         descripcion: "Una novela clásica de la literatura española.",
@@ -22,6 +23,7 @@ let libros = [
         genero: "Ciencia ficción",
         idioma: "Inglés",
         precio: 40000,
+        descuento : 20,
         formato: "Tapa blanda",
         isbn: "9789876543210",
         descripcion: "Una novela distópica sobre un futuro totalitario.",
@@ -39,6 +41,7 @@ let libros = [
         genero: "Realismo mágico",
         idioma: "Español",
         precio: 47000,
+        descuento : 20,
         formato: "Tapa dura",
         isbn: "9788497592208",
         descripcion: "Una obra maestra de la literatura latinoamericana.",
@@ -73,6 +76,7 @@ let libros = [
         genero: "Fantasía",
         idioma: "Inglés",
         precio: 60000,
+        descuento : 20,
         formato: "Tapa dura",
         isbn: "9780261102385",
         descripcion: "Una épica saga de aventuras en la Tierra Media.",
@@ -107,6 +111,7 @@ let libros = [
         genero: "Romance",
         idioma: "Inglés",
         precio: 35000,
+        descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780199535569",
         descripcion: "Una novela sobre la vida y los amores de las hermanas Bennet.",
@@ -124,6 +129,7 @@ let libros = [
         genero: "Ficción",
         idioma: "Ruso",
         precio: 39000,
+        descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780140449136",
         descripcion: "Una novela sobre la moralidad y la justicia.",
@@ -141,6 +147,7 @@ let libros = [
         genero: "Ficción",
         idioma: "Alemán",
         precio: 47000,
+        descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780805208956",
         descripcion: "Una novela corta sobre un hombre que se convierte en un insecto gigante.",
@@ -158,6 +165,7 @@ let libros = [
         genero: "Ficción",
         idioma: "Inglés",
         precio: 47000,
+        descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780743273565",
         descripcion: "Una novela sobre el sueño americano en los años 20.",
@@ -175,6 +183,7 @@ let libros = [
         genero: "Ficción",
         idioma: "Inglés",
         precio: 20000,
+        descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780141439570",
         descripcion: "Una novela sobre un hombre que no envejece.",
@@ -192,6 +201,7 @@ let libros = [
         genero: "Ficción",
         idioma: "Inglés",
         precio: 170000,
+        descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780199535675",
         descripcion: "Una novela modernista sobre un día en la vida de Leopold Bloom.",
@@ -209,6 +219,7 @@ let libros = [
         genero: "Ficción",
         idioma: "Francés",
         precio: 60000,
+        descuento : 20,
         formato: "Tapa dura",
         isbn: "9782070409376",
         descripcion: "Una novela en siete volúmenes sobre la memoria involuntaria.",
@@ -226,6 +237,7 @@ let libros = [
         genero: "Aventura",
         idioma: "Inglés",
         precio: 59000,
+        descuento : 20,
         formato: "Tapa dura",
         isbn: "9781503280786",
         descripcion: "Una novela sobre la caza de una ballena blanca gigante.",
@@ -243,6 +255,7 @@ let libros = [
         genero: "Ficción",
         idioma: "Español",
         precio: 49000,
+        descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780061122415",
         descripcion: "Una novela sobre seguir tus sueños y encontrar tu destino.",
@@ -273,6 +286,7 @@ let libros = [
         genero: "Ficción",
         idioma: "Español",
         precio: 45000,
+        descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780307474278",
         descripcion: "Una novela de intriga que mezcla historia y conspiración.",
@@ -288,6 +302,7 @@ let libros = [
         genero: "Ficción",
         idioma: "Español",
         precio: 50000,
+        descuento : 20,
         formato: "Tapa dura",
         isbn: "9788401337800",
         descripcion: "Una historia de misterio y amor en la Barcelona de posguerra.",
@@ -303,6 +318,7 @@ let libros = [
         genero: "Fantasía",
         idioma: "Inglés",
         precio: 79000,
+        descuento : 20,
         formato: "Tapa blanda",
         isbn: "9780345339683",
         descripcion: "La historia del hobbit Bilbo Bolsón y su aventura para recuperar el tesoro de Smaug.",
@@ -318,6 +334,7 @@ let libros = [
         genero: "Ciencia ficción",
         idioma: "Inglés",
         precio: 35000,
+        descuento : 20,
         formato: "Tapa blanda",
         isbn: "9788427202122",
         descripcion: "Una saga distópica sobre una competencia mortal televisada.",
@@ -338,6 +355,7 @@ const libroNuevo = {
     genero: "Suspenso y Terror",
     idioma: "Español",
     precio: 39000,
+    descuento : 20,
     formato: "Tapa blanda",
     isbn: "9786287513631",
     descripcion: "El primer grito fue el de un ferroviario aislado por la nieve, cuando sintió unos colmillos desgarrando su garganta.",
@@ -351,248 +369,243 @@ const libroNuevo = {
   };
 
 
-
-function showMainMenu() {
+  function showMainMenu() {
     //Mensaje Primer Menu
     let message = "Elige un Menu:\n";
     message += "1. Menu Libros\n";
     message += "2. Menu iteraciones\n";
-    message += "3. Menu nuevo\n";
+    message += "3. Listar libros con descuento\n";
     message += "4. Salir";
   
-    // Mensaje y Opcion del Usuario
+    
     let choice = prompt(message);
   
-    //Elección del usuario
+    
     switch (choice) {
       case '1':
-        //SUBMENU1
+        
         showSubMenu();
         break;
       case '2':
-        //SUBMENU 2 'ITERACIONES'
+    
         showSubMenu2();
         break;
       case '3':
-        alert("Elegiste la Opción 3");
-        showMainMenu(); // Volver al menú principal
+        listarLibrosConDescuento();
+        showMainMenu(); 
         break;
       case '4':
         alert("Saliendo del menú...");
         break;
       default:
         alert("Opción no válida");
-        showMainMenu(); // Volver al menú principal en caso de opción no válida
+        showMainMenu(); 
     }
-  }
-  
-  function showSubMenu() {
-    // Definir el mensaje con las opciones del submenú
-  
-    let subMessage = "Elige una  opcion :\n";
+}
+
+function listarLibrosConDescuento() {
+    const librosConDescuento = libros.map(libro => {
+        const precioConDescuento = libro.precio - (libro.precio * libro.descuento / 100);
+        return {
+            titulo: libro.titulo,
+            autor: libro.autor,
+            editorial: libro.editorial,
+            precio: libro.precio,
+            descuento: libro.descuento,
+            precioConDescuento: precioConDescuento
+        };
+    });
+
+    console.table(librosConDescuento);
+}
+
+function showSubMenu() {
+    let subMessage = "Elige una opción:\n";
     subMessage += "1. Mostrar Pila de libros\n";
     subMessage += "2. Añadir un libro a la pila\n";
-    subMessage += "3. Quitar El ultmo libro de la Pila\n";
+    subMessage += "3. Quitar El último libro de la Pila\n";
     subMessage += "4. Mostrar la longitud de la pila\n";
     subMessage += "5. Regresar al menú principal";
-  
+
     function mostrarLibros(libros) {
-      console.table(libros);
+        console.table(libros);
     }
-  
+
     function añadirLibro(libros, libro) {
-      libros.push(libro);
-      console.log(`Libro añadido: ${libro.titulo}`);
+        libros.push(libro);
+        console.log(`Libro añadido: ${libro.titulo}`);
     }
-  
+
     function quitarLibro(libros) {
-      const libroQuitado = libros.pop();
-      if (libroQuitado) {
-        console.log(`Libro quitado: ${libroQuitado.titulo}`);
-      } else {
-        console.log("No hay libros para quitar.");
-      }
+        const libroQuitado = libros.pop();
+        if (libroQuitado) {
+            console.log(`Libro quitado: ${libroQuitado.titulo}`);
+        } else {
+            console.log("No hay libros para quitar.");
+        }
     }
-  
+
     function mostrarLongitud(libros) {
-      console.log(`Longitud del array: ${libros.length}`);
+        console.log(`Longitud del array: ${libros.length}`);
     }
-  
-    // Mostrar el mensaje y capturar la elección del usuario
-    let subChoice = prompt(subMessage);
-  
-    // Evaluar la elección del usuario en el submenú
-  
-    switch (subChoice) {
-      case '1':
-        mostrarLibros(libros);
-        showSubMenu();
-        break;
-      case '2':
-        añadirLibro(libros , libroNuevo);
-          showSubMenu();
-        break;
-      case '3':
-        quitarLibro(libros);
-          showSubMenu();
-        break;
-      case '4':
-        mostrarLongitud(libros); 
-          showSubMenu();
-        break;
-      case '5':
-        showMainMenu(); // Volver al menú principal
-        break;
-      default:
-        alert("Opción no válida");
-        showSubMenu(); // Volver al submenú en caso de opción no válida
-    }
-  }
-  
-  //SUBMENU2
-  
-  function showSubMenu2() {
-    // Definir el mensaje con las opciones del submenú
+
     
-    let subMessage = "Elige una  opcion :\n";
-    subMessage += "1. Mostrar 1 iteracion\n";
+    let subChoice = prompt(subMessage);
+
+    
+    switch (subChoice) {
+        case '1':
+            mostrarLibros(libros);
+            showSubMenu();
+            break;
+        case '2':
+            añadirLibro(libros, libroNuevo);
+            showSubMenu();
+            break;
+        case '3':
+            quitarLibro(libros);
+            showSubMenu();
+            break;
+        case '4':
+            mostrarLongitud(libros);
+            showSubMenu();
+            break;
+        case '5':
+            showMainMenu(); 
+            break;
+        default:
+            alert("Opción no válida");
+            showSubMenu(); 
+    }
+}
+
+function showSubMenu2() {
+    
+    let subMessage = "Elige una opción:\n";
+    subMessage += "1. Mostrar 1 iteración\n";
     subMessage += "2. Mostrar 10 iteraciones\n";
-    subMessage += "5. Regresar al menú principal";
-  
-  //MOSTRAR ITERACION
-  
+    subMessage += "3. Regresar al menú principal";
+
+   
     const LibroMethod = libros.map((libros) => {
-      return{
-          titulo: libros.titulo,
-          autor: libros.autor,
-          editorial: libros.editorial,
-          precio: libros.precio
-      }
+        return {
+            titulo: libros.titulo,
+            autor: libros.autor,
+            editorial: libros.editorial,
+            precio: libros.precio
+        }
     });
-  
-    //MOSTRAR 10 ITERACIONES
-  
-    const iteraciones = libros.map((libros) =>{
-      return{
-          titulo: libros.titulo,
-          autor: libros .autor,
-          paginas: libros.paginas
-  
-      }
-    });
-  
+
     
-    const iteraciones2 = libros.map((libros) =>{
-      return{
-          titulo: libros.titulo,
-          dimensiones: libros.dimensiones,
-          precio: libros.precio
-  
-      }
+    const iteraciones = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            autor: libros.autor,
+            paginas: libros.paginas
+        }
     });
-  
-    const iteraciones3 = libros.map((libros) =>{
-      return{
-          titulo: libros.titulo,
-          idioma: libros.idioma,
-          ubicacion: libros.ubicacion
-  
-      }
+
+    const iteraciones2 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            dimensiones: libros.dimensiones,
+            precio: libros.precio
+        }
     });
-  
-    const iteraciones4 = libros.map((libros) =>{
-      return{
-          titulo: libros.titulo,
-          isbn: libros.isbn,
-          precio: libros.precio
-  
-      }
+
+    const iteraciones3 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            idioma: libros.idioma,
+            ubicacion: libros.ubicacion
+        }
     });
-  
-    const iteraciones5 = libros.map((libros) =>{
-      return{
-          titulo: libros.titulo,
-          autor: libros.autor,
-          genero: libros.genero
-  
-      }
+
+    const iteraciones4 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            isbn: libros.isbn,
+            precio: libros.precio
+        }
     });
-  
-    const iteraciones6 = libros.map((libros) =>{
-      return{
-          titulo: libros.titulo,
-          descripcion: libros.descripcion,
-          genero: libros.genero
-  
-      }
+
+    const iteraciones5 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            autor: libros.autor,
+            genero: libros.genero
+        }
     });
-  
-    const iteraciones7 = libros.map((libros) =>{
-      return{
-          titulo: libros.titulo,
-          fecha_publicacion: libros.fecha_publicacion,
-          paginas: libros.paginas
-  
-      }
+
+    const iteraciones6 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            descripcion: libros.descripcion,
+            genero: libros.genero
+        }
     });
-  
-    const iteraciones8 = libros.map((libros) =>{
-      return{
-          titulo: libros.titulo,
-          estado: libros.estado,
-          ubicacion: libros.ubicacion
-  
-      }
+
+    const iteraciones7 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            fecha_publicacion: libros.fecha_publicacion,
+            paginas: libros.paginas
+        }
     });
-  
-    const iteraciones9 = libros.map((libros) =>{
-      return{
-          titulo: libros.titulo,
-          genero: libros.genero,
-          formato: libros.formato
-  
-      }
+
+    const iteraciones8 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            estado: libros.estado,
+            ubicacion: libros.ubicacion
+        }
     });
-  
-    const iteraciones10 = libros.map((libros) =>{
-      return{
-          titulo: libros.titulo,
-          idioma: libros.idioma,
-          editorial: libros.editorial
-  
-      }
+
+    const iteraciones9 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            genero: libros.genero,
+            formato: libros.formato
+        }
     });
-  
-  
-    // Mostrar el mensaje y capturar la elección del usuario
+
+    const iteraciones10 = libros.map((libros) => {
+        return {
+            titulo: libros.titulo,
+            idioma: libros.idioma,
+            editorial: libros.editorial
+        }
+    });
+
+   
     let subChoice = prompt(subMessage);
-  
-    // Evaluar la elección del usuario en el submenú
-  
+
+   
     switch (subChoice) {
-      case '1':
-        console.table(LibroMethod);
-        showSubMenu2();
-        break;
-      case '2':
-        console.table(iteraciones);
-        console.table(iteraciones2);
-        console.table(iteraciones3);
-        console.table(iteraciones4);
-        console.table(iteraciones5);
-        console.table(iteraciones6);
-        console.table(iteraciones7);
-        console.table(iteraciones8);
-        console.table(iteraciones9);
-        console.table(iteraciones10);
-          showSubMenu2();
-      case '3':
-        showMainMenu(); // Volver al menú principal
-        break;
-      default:
-        alert("Opción no válida");
-        showSubMenu(); // Volver al submenú en caso de opción no válida
+        case '1':
+            console.table(LibroMethod);
+            showSubMenu2();
+            break;
+        case '2':
+            console.table(iteraciones);
+            console.table(iteraciones2);
+            console.table(iteraciones3);
+            console.table(iteraciones4);
+            console.table(iteraciones5);
+            console.table(iteraciones6);
+            console.table(iteraciones7);
+            console.table(iteraciones8);
+            console.table(iteraciones9);
+            console.table(iteraciones10);
+            showSubMenu2();
+            break;
+        case '3':
+            showMainMenu(); 
+            break;
+        default:
+            alert("Opción no válida");
+            showSubMenu2(); 
     }
-  }
-  // Inicialmente mostrar el menú principal
-  showMainMenu();
+}
+
+showMainMenu();
