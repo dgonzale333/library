@@ -59,6 +59,7 @@ let libros = [
         genero: "Ficción",
         idioma: "Inglés",
         precio: 65,
+        descuento: 20,
         formato: "Tapa blanda",
         isbn: "9780061120084",
         descripcion: "Una novela sobre la injusticia racial en el sur de Estados Unidos.",
@@ -94,6 +95,7 @@ let libros = [
         genero: "Ficción",
         idioma: "Español",
         precio: 90,
+        descuento: 20,
         formato: "Tapa dura",
         isbn: "9781234567891",
         descripcion: "Una novela clásica de la literatura española.",
@@ -271,6 +273,7 @@ let libros = [
         genero: "Fantasía",
         idioma: "Inglés",
         precio: 16,
+        descuento: 20,
         formato: "Tapa dura",
         isbn: "9780590353427",
         descripcion: "El primer libro de la famosa serie de Harry Potter.",
@@ -602,14 +605,13 @@ function showSubMenu2() {
 
 function listarLibrosConDescuento() {
     const librosConDescuento = libros.map(libro => {
-        const precioConDescuento = libro.precio - (libro.precio * libro.descuento / 100);
         return {
             titulo: libro.titulo,
             autor: libro.autor,
             editorial: libro.editorial,
             precio: libro.precio,
             descuento: libro.descuento,
-            precioConDescuento: precioConDescuento
+            
         };
     });
 
