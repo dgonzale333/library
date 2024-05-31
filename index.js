@@ -380,7 +380,8 @@ function showMainMenu() {
     message += "3. Listar libros con descuento\n";
     message += "4. Menu libros precio\n";
     message += "5. Menu detalles libros\n";
-    message += "6. Salir";
+    message += "6. Menu buscar libros\n";
+    message += "7. Salir";
 
 
     let choice = prompt(message);
@@ -404,6 +405,9 @@ function showMainMenu() {
             showSubMenu4();
             break;
         case '6':
+            showSubMenu5();
+            break;
+        case '7':
             alert("Saliendo del menú...");
             break;
         default:
@@ -611,7 +615,7 @@ function listarLibrosConDescuento() {
             editorial: libro.editorial,
             precio: libro.precio,
             descuento: libro.descuento,
-            
+
         };
     });
 
@@ -724,6 +728,122 @@ function showSubMenu4() {
     }
 
 
+}
+
+function showSubMenu5() {
+    let subMessage = "Elige una opción:\n";
+    subMessage += "1. Buscar libros por titulo\n";
+    subMessage += "2. Buscar libros por autor\n";
+    subMessage += "3. Buscar libros por fecha de publicacion\n";
+    subMessage += "4. Buscar libros por genero\n";
+    subMessage += "5. Buscar libros por idioma\n";
+    subMessage += "6. Mostar 10 iteraciones de libros\n";
+    subMessage += "7. Regresar al menú \n";
+
+
+    function tituloLibro() {
+        return libros.find(libro => libro.titulo === "Harry Potter y la piedra filosofal")
+    }
+
+    function autorLibro() {
+        return libros.find(libro => libro.autor === "J.K. Rowling")
+    }
+
+    function fechaLibro() {
+        return libros.find(libro => libro.fecha_publicacion === "1997-06-26")
+    }
+
+    function generoLibro() {
+        return libros.find(libro => libro.genero === "Fantasía")
+    }
+
+    function idiomaLibro() {
+        return libros.find(libro => libro.idioma === "Español")
+    }
+
+    let iteracionLibro1 = libros.find((libro) => {
+        return libro.estado === "Usado";
+    });
+
+    let iteracionLibro2 = libros.find((libro) => {
+        return libro.descuento === 20;
+    });
+
+    let iteracionLibro3 = libros.find((libro) => {
+        return libro.editorial === "Editorial 1";
+    });
+
+    let iteracionLibro4 = libros.find((libro) => {
+        return libro.peso === "1.2 kg";
+    });
+
+    let iteracionLibro5 = libros.find((libro) => {
+        return libro.isbn === "9788497592208";
+    });
+
+    let iteracionLibro6 = libros.find((libro) => {
+        return libro.descripcion === "Una obra maestra de la literatura latinoamericana.";
+    });
+
+    let iteracionLibro7 = libros.find((libro) => {
+        return libro.formato === "El Hobbit";
+    });
+
+    let iteracionLibro8 = libros.find((libro) => {
+        return libro.estado === "Tapa dura";
+    });
+
+    let iteracionLibro9 = libros.find((libro) => {
+        return libro.dimensiones === "14x4x21 cm";
+    });
+
+    let iteracionLibro10 = libros.find((libro) => {
+        return libro.paginas === 1178;
+    });
+
+
+    let subChoice = prompt(subMessage);
+
+    switch (subChoice) {
+        case '1':
+            console.table(tituloLibro());
+            showSubMenu5();
+            break;
+        case '2':
+            console.table(autorLibro());
+            showSubMenu5();
+            break;
+        case '3':
+            console.table(fechaLibro());
+            showSubMenu5();
+            break;
+        case '4':
+            console.table(generoLibro());
+            showSubMenu5();
+            break;
+        case '5':
+            console.table(idiomaLibro());
+            showSubMenu5();
+            break;
+        case '6':
+            console.table(iteracionLibro1)
+            console.table(iteracionLibro2)
+            console.table(iteracionLibro3)
+            console.table(iteracionLibro4)
+            console.table(iteracionLibro5)
+            console.table(iteracionLibro6)
+            console.table(iteracionLibro7)
+            console.table(iteracionLibro8)
+            console.table(iteracionLibro9)
+            console.table(iteracionLibro10)
+            break;
+        case '7':
+            showMainMenu();
+            break;
+        default:
+            alert("Opción no válida");
+            showSubMenu5();
+    }
 
 }
 showMainMenu();
