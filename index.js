@@ -746,15 +746,15 @@ function showSubMenu5() {
     }
 
     function autorLibro() {
-        return libros.find(libro => libro.autor === "J.K. Rowling")
+        return libros.find(libro => libro.autor === "Herman Melville")
     }
 
     function fechaLibro() {
-        return libros.find(libro => libro.fecha_publicacion === "1997-06-26")
+        return libros.find(libro => libro.fecha_publicacion === "2008-09-14")
     }
 
     function generoLibro() {
-        return libros.find(libro => libro.genero === "Fantasía")
+        return libros.find(libro => libro.genero === "Aventura")
     }
 
     function idiomaLibro() {
